@@ -39,7 +39,7 @@ header {
 }
 
 #about-me p {
-    text-align: Left;
+    text-align: center;
     font-size: 1.3rem;
     font-weight: 1500;
     line-height: 1.6
