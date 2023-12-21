@@ -8,13 +8,6 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
 }
 
-@font-face {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 400;
-    src: url(/Portfolio/static/media/FiraCode-Regular.ea32261131becc79ea84.ttf) format("truetype")
-}
-
 .App {
     text-align: center
 }
