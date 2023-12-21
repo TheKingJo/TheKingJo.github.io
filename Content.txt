@@ -1,0 +1,44 @@
+Bild, Name
+
+programmiersprachen:
+	lua
+	python
+	c#
+	html
+	css
+	java
+
+programme:
+	unity
+	blender
+	substance painter
+	gimp
+	premier pro
+
+sterne für skill anzeige
+
+
+
+Verlinkungen:
+	Linkedin
+	Deviantart
+	Sketchfab
+	Itch.io
+
+Projekte:
+	Algodat
+	beta
+ww
+EE
+factorio modding
+s3 texture pack?
+
+discord moderation
+
+email an tokj google
+
+german and englisch mode
+
+aktueller student
+
+programm expertisen
