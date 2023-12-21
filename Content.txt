@@ -28,7 +28,7 @@ Verlinkungen:
 Projekte:
 	Algodat
 	beta
-ww
+	ww
 EE
 factorio modding
 s3 texture pack?
@@ -39,6 +39,6 @@ email an tokj google
 
 german and englisch mode
 
-aktueller student
+	aktueller student
 
-programm expertisen
+	programm expertisen

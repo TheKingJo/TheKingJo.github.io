@@ -53,8 +53,8 @@ header {
 }
 
 #profile-picture>img {
-    height: 60%;
-    width: 60%
+    height: 120px;
+    width: 120px
 }
 
 #knowledge-container-placement {
@@ -126,7 +126,9 @@ footer {
 
 .project-entry {
     margin-bottom: 1rem;
-    margin-top: 2rem
+    margin-top: 2rem;
+    border: 1px solid #ffffff;
+    padding: 0%;
 }
 
 .project-image {
@@ -144,6 +146,10 @@ footer {
     color: #00008b;
     font-size: 1.5rem;
     font-weight: bolder
+}
+
+.linkedDiv {
+    text-decoration: none;
 }
 
 .project-categories {
@@ -182,14 +188,15 @@ footer {
     font-weight: 700
 }
 
-.description {
+.project-description {
     margin-top: 1rem;
-    padding: .5rem 2rem
+    padding: .5rem 1rem;
+    text-align: justify;
 }
 
-.description>span {
+.project-description>span {
     color: #333;
-    font-size: 1.1rem
+    font-size: 1.1rem;
 }
 
 #projects-container {
