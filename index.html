@@ -16,6 +16,13 @@
             margin-top: 20px;
         }
 
+        th {
+            border: 1px solid #dddddd;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-align: center;
+        }
+
         td {
             border: 1px solid #dddddd;
             text-align: center;
@@ -27,16 +34,51 @@
         }
 
         th:empty {
-            border: none; /* Entfernt die Grenzen für leere th-Elemente */
-        }
-
-        .infoTabelle td {
             border: none;
-            text-align: Left;
         }
 
-        .infoTabelle td:nth-child(1) {
+        .about-me td {
+            text-align: Left;
+            border: none;
+            width: fit-content;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .about-me td:nth-child(1) {
             text-align: right;
+            width: 100%;
+        }
+
+        .personal-info td {
+            border-bottom: none;
+            border-top: none;
+            border-right: 1px solid black;
+            border-left: none;
+        }
+
+        .project-description td {
+            border-bottom: none;
+            border-top: none;
+            border-right: 1px solid black;
+            border-left: none;
+            text-align: center;
+        }
+
+        .project-description th {
+            border-bottom: 1px solid black;
+            border-top: none;
+            border-right: 1px solid black;
+            border-left: none;
+            text-align: center;
+        }
+
+        .project-description th:last-child, td:last-child{
+            border-right: none;
+        }
+
+        .project-description td:nth-child(3){
+            text-align: Left;
         }
 
     </style>
@@ -47,43 +89,33 @@
 
     <body><noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
             <div class="App">
-                <header>
-                    <h1>Portfolio</h1>
-                </header>
                 <div id="about-me">
-                    <h2>Über mich</h2>
                     <div id="profile-picture">
                         <img src="./Images/pb.jpg" alt="Profilbild" width="1" height="1"> 
                     </div>
-                    <table class="infoTabelle">
-                        <tr>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td>Name</td>
-                            <td>Johannes</td>
-                        </tr>
-                        <tr>
-                            <td>Alter</td>
-                            <td>24</td>
-                        </tr>
-                        <tr>
-                            <td>Beschäftigung</td>
-                            <td>Student in Medieninformatik und Interaktives Entertainment</td>
-                        </tr>
-                    </table>
-                    <div id="personal-info">
+                    <div class="about-me">
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td>Johannes Rieck</td>
+                            </tr>
+                            <tr>
+                                <td>Alter</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>Beschäftigung</td>
+                                <td>Student in Medieninformatik und Interaktives Entertainment</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="personal-info" id="personal-info">
                         <p>Software Skills</p>
                         <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td>Blender</td>
@@ -143,17 +175,6 @@
                                 <!-- Fügen Sie hier weitere Zeilen nach Bedarf hinzu -->
                             </tbody>
                         </table>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
                 <div id="uni-portfolio">
@@ -161,7 +182,7 @@
                     <div id="projects-container" class="">
                         <div class="project-entry">
                             <a href="https://games-studieren.hs-mittweida.de/beta/" class="linkedDiv">
-                                <img src="./Images/beta.svg" alt="Beta 2024 Preview" class="project-image">
+                                <img src="./Images/beta.png" alt="Beta 2024 Preview" class="project-image">
                             </a>
                             <div class="project-details">
                                 <div class="project-name"><span>Beta 2024</span></div>
@@ -173,13 +194,13 @@
                                     <div class="project-category"><span>Git</span></div>
                                 </div>
                                 <div class="worked-positions">
-                                    <div class="worked-position"><span>Technical-Art-Director</span></div>
+                                    <div class="worked-position"><span>Computer Graphics Director</span></div>
                                     <div class="worked-position"><span>Modelling</span></div>
                                     <div class="worked-position"><span>Texturing</span></div>
                                     <div class="worked-position"><span>Team Leading</span></div>
                                 </div>
                                 <div class="project-description">
-                                    <span>70 Studenten arbeiten zwei Semester lang in den Departments
+                                    <span>70 Studenten arbeiten 2 Semester lang in den Departments Projektmanagement, 
                                         Gamedesign, Art, Tech, Engine und Eventmanagement daran ein Spiel zu entwickeln.
                                         Unser Spiel heißt Echolight und ist ein 3D Roque-Like mit isometrischer Perspektive und
                                         ästhetischem Fokus auf Licht und Dunkelheit.</span>
@@ -187,7 +208,9 @@
                             </div>
                         </div>
                         <div class="project-entry">
-                            <img src="./Images/hsmw.svg" alt="HSMW" class="project-image">
+                            <a href="https://www.youtube.com/watch?v=4mcLAGDHgsE" class="linkedDiv">
+                                <img src="./Images/hsmw.svg" alt="HSMW" class="project-image">
+                            </a>
                             <div class="project-details">
                                 <div class="project-name"><span>Projektarbeit für HSMW im Modul Wissenschaft und Wirtschaft</span></div>
                                 <div class="project-categories">
@@ -255,6 +278,67 @@
                         </div>
                     </div>
                 </div>
+                <div id="uni-portfolio">
+                    <div id="uni-portfolio-header"><span>Freizeit-Portfolio</span></div>
+                    <div id="projects-container" class="">
+                        <div class="project-entry">
+                            <a>
+                                <img src="./Images/discord.svg" alt="Discord" class="project-image">
+                            </a>
+                            <div class="project-details">
+                                <div class="project-name"><span>Discord Community Server</span></div>
+                                <div class="project-categories">
+                                    <div class="project-category"><span>Communities</span></div>
+                                    <div class="project-category"><span>Management</span></div>
+                                </div>
+                                <div class="worked-positions">
+                                </div>
+                                <div class="project-description">
+                                    <span>
+                                        Discord Server administriere und moderiere ich seit 2017. Mit der Strukturierung der Server
+                                        und dem Management von Communities bin ich vertraut.
+                                    </span>
+                                    <table>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Rolle</th>
+                                            <th>Dauer</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Zocker Lounge</td>
+                                            <td>Admin, Mod</td>
+                                            <td>2019-22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The First Explorers</td>
+                                            <td>Admin</td>
+                                            <td>03.2023+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>beta 2024</td>
+                                            <td>Admin</td>
+                                            <td>02.2023+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The Settlers 4 World Championship 2021</td>
+                                            <td>Admin, Mod, Orga</td>
+                                            <td>2021</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Siedler 4 2v2 Tournament 2022</td>
+                                            <td>Admin</td>
+                                            <td>2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bootsmänner</td>
+                                            <td>Admin, Mod</td>
+                                            <td>2017+</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--<div id="uni-portfolio">
                     <div id="uni-portfolio-header">
                         <span>Kontakt</span>
@@ -271,42 +355,42 @@
                             </div>
                         </form>
                 </div>-->
-                <footer>
-                    <p>© 2023 Johannes Rieck</p>
-                    <div class="social-media">
-                        <div class="social-media-entry">
-                            <a href="https://sketchfab.com/theonlykingjo" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <img src="./Images/sketchfab.svg" alt="Sketchfab Logo">
-                                <span>Sketchfab</span>
-                            </a>
-                        </div>
-                        <div class="social-media-entry">
-                            <a href="https://www.deviantart.com/theonlykingjo" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <img src="./Images/deviantart.svg" alt="DeviantArt Logo">
-                                <span>DeviantArt</span>
-                            </a>
-                        </div>
-                        <div class="social-media-entry">
-                            <a href="https://www.linkedin.com/in/johannes-rieck-335806265/" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <img src="./Images/linkedin.svg" alt="LinkedIn Logo">
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                        <div class="social-media-entry">
-                            <a href="https://thekingjo.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <img src="./Images/itchio.svg" alt="Itchio Logo">
-                                <span>Itch.io</span>
-                            </a>
-                        </div>
-                        <div class="social-media-entry">
-                            <a href="https://github.com/TheKingJo" target="_blank" rel="noopener noreferrer" class="social-link">
-                                <img src="./Images/github.svg" alt="GitHub Logo">
-                                <span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </footer>
             </div>
+            <footer>
+                <p>© 2023 Johannes Rieck</p>
+                <div class="social-media">
+                    <div class="social-media-entry">
+                        <a href="https://sketchfab.com/theonlykingjo" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="./Images/sketchfab.svg" alt="Sketchfab Logo">
+                            <span>Sketchfab</span>
+                        </a>
+                    </div>
+                    <div class="social-media-entry">
+                        <a href="https://www.deviantart.com/theonlykingjo" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="./Images/deviantart.svg" alt="DeviantArt Logo">
+                            <span>DeviantArt</span>
+                        </a>
+                    </div>
+                    <div class="social-media-entry">
+                        <a href="https://www.linkedin.com/in/johannes-rieck-335806265/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="./Images/linkedin.svg" alt="LinkedIn Logo">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="social-media-entry">
+                        <a href="https://thekingjo.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="./Images/itchio.svg" alt="Itchio Logo">
+                            <span>Itch.io</span>
+                        </a>
+                    </div>
+                    <div class="social-media-entry">
+                        <a href="https://github.com/TheKingJo" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="./Images/github.svg" alt="GitHub Logo">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

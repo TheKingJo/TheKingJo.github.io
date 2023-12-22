@@ -1,4 +1,4 @@
-Bild, Name
+	Bild, Name
 
 programmiersprachen:
 	lua
@@ -29,11 +29,22 @@ Projekte:
 	Algodat
 	beta
 	ww
+
 EE
 factorio modding
 s3 texture pack?
 
-discord moderation
+discord moderation/administration
+	ZL 3 Jahre
+	bootsmänner community
+	siedler 4 2v2 tournament 2022
+	s4 World championship 2021
+	the first explorers
+	beta server
+versch uni server
+
+nauvis post collapse dlc
+colonia prima in beratender funktion
 
 email an tokj google
 
